@@ -1,0 +1,56 @@
+@import "variables";
+
+.get-started {
+  .glyphicon{
+    font-size:30px;
+    color: white;
+    &:hover{
+      opacity: 1;
+      color: #00bc9c;
+    }
+  }
+}
+.sl-arr-left{
+  left: 0;
+}
+.sl-arr-right{
+  right: 0;
+}
+.arr-left, .arr-right{
+  width:16px;
+  height:27px;
+  position:absolute;
+  top: 50%;
+  margin-top: -14px;
+}
+.sl-arr-left, .sl-arr-right{
+  position: absolute;
+  top:0;
+  width: 30px;
+  height: 30px;
+  background-color: #506a85;
+  opacity: 0.25;
+  border-radius: 3px;
+  text-align: center;
+  display:none;
+}
+.slider-button{
+  &:hover{
+    .sl-arr-left, .sl-arr-right{
+      display: block;
+    }
+  }
+  .sl-arr-left, .sl-arr-right{
+    &:hover{
+      opacity: 1;
+      .glyphicon{
+        opacity: 1;
+        color: #00bc9c;
+      }
+    }
+    span{
+      color:white;
+      vertical-align: middle;
+    }
+  }
+}

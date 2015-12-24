@@ -1,0 +1,116 @@
+@import "variables";
+.contact-us {
+  background-color: #f5f7fa;
+  box-shadow: 0 1px 0 #e6e9ed;
+}
+.our-contacts{
+  a{
+    padding:12px 28px 10px 0;
+    float:left;
+    font-size: 0.75em;
+    &:before{
+      width: 20px;
+      height: 12px;
+      content: '';
+      display: inline-block;
+    }
+    &:first-child:before {
+      background: url(../img/icon-mail-1.svg) no-repeat;
+      vertical-align: middle;
+    }
+    &:nth-child(2):before{
+      background: url(../img/icon-mobile.svg) no-repeat;
+    }
+  }
+}
+.social-elements {
+  li{
+    float:right;
+    padding:10px;
+    &:first-child:hover{
+      background-color: #4668b3;
+    }
+    &:nth-child(2):hover{
+      background-color: #de5745;
+    }
+    &:nth-child(3):hover{
+      background-color: #2fbbed;
+    }
+    &:nth-child(4):hover{
+      background-color: #d94348;
+    }
+    &:nth-child(5):hover{
+      background-color: #3079ff;
+    }
+    &:nth-child(6):hover{
+      background-color: #eb6397;
+    }
+  }
+}
+.h-page {
+  .nav-section {
+    h1 {
+      width: 165px;
+      float:left;
+
+    }
+    h1, nav {
+      margin: 37px 0;
+    }
+    nav.navbar {
+      background-color:  white;
+      border:0;
+      color: #506a85;
+      font-size: 0.9375em;
+      font-weight: 700;
+      margin: 35px 30px 35px 35px;
+      float:left;
+      .navbar-nav{
+        &>li{
+          position: static;
+          &:hover{
+            ul{
+              display: block;
+            }
+          }
+          &>a:hover{
+            background-color: #f5f7fa;
+            border: 1px solid #e6e9ed;
+            box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+            padding:14px;
+            color: #00bc9c;
+            border-radius:2px;
+          }
+          a{
+            &:hover{
+              color: #00bc9c;
+            }
+          }
+          ul{
+            display: none;
+            position: absolute;
+            z-index: 999;
+            li{
+              background-color: #f5f7fa;
+              border: 1px solid #e6e9ed;
+              box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+              padding:14px;
+              color: #00bc9c;
+              border-radius:2px;
+              &:hover{
+                background-color: #00bc9c;
+                a{
+                  color:white;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+    .search {
+      float: right;
+      margin: 50px 0 20px;
+    }
+  }

@@ -1,0 +1,260 @@
+@import "variables";
+@media screen and (min-width: $min-width) and (max-width:$sm-width -(1)){
+  .social-elements {
+    li{
+      width: calc(100%/6);
+      text-align: center;
+    }
+  }
+  .our-contacts {
+    a{
+      width: 50%;
+    }
+  }
+  .get-started {
+    article {
+      h2+p {
+        padding:  0 40px;
+      }
+    }
+  }
+  .work-presentation{
+    figure{
+      width: calc(100% - 30px);
+    }
+  }
+  .h-page{
+    .nav-section{
+      h1, .search{
+        float: right;
+        margin-right: 80px;
+      }
+      .navbar-nav {
+        display: none;
+        position: absolute;
+        top: 100%;
+        z-index: 999;
+        width: 200px;
+        li{
+          background-color: #f5f7fa;
+          border: 1px solid #e6e9ed;
+          box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+          padding: 14px;
+          color: #00bc9c;
+          border-radius: 2px;
+        }
+      }
+      .navbar-header {
+        position: absolute;
+        &:hover + div.clearfix .navbar-nav {
+          display: block;
+        }
+
+      }
+    }
+  }
+  footer nav li {
+    a{
+      display: block;
+      padding: 10px 0;
+      width: 100%;
+      text-align: center;
+      text-transform: $menu-text-transform;
+      &:hover{
+        border: 1px solid cyan;
+        border-radius: 3px;
+        padding: 9px 0;
+      }
+    }
+  }
+  .author{
+    text-align: center;
+  }
+}
+@media screen and (max-width: $xs-width - (1)){
+  .arr-left{
+    left:5px;
+  }
+  .arr-right{
+    right:5px;
+  }
+  .work-slider {
+    ul.clearfix {
+      &:first-of-type {
+        li {
+          width: calc(100% - 30px);
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: $lg-width -(1)){
+  div.form{
+    width: 80%;
+  }
+}
+@media screen and (min-width: $xs-width) and (max-width: $sm-width - (1)){
+  .arr-left{
+    left:15px;
+  }
+  .arr-right{
+    right:15px;
+  }
+  .advantages {
+    li{
+      padding: 0 40px;
+    }
+  }
+  .work-slider {
+    ul{
+      &:first-child{
+        li{
+          width:50%;
+          float:left;
+          &:nth-child(2n+1){
+            clear: both;
+          }
+        }
+      }
+    }
+    ul.clearfix {
+      &:first-of-type {
+        li {
+          width: calc(50% - 30px);
+        }
+      }
+    }
+  }
+  .our-contacts-short .container-fluid{
+    max-width: 500px;
+  }
+}
+@media screen and (min-width: $sm-width) and (max-width: $md-width - (1)){
+  .h-page  {
+    .nav-section{
+      nav.navbar{
+        margin-left: 10px;
+        .nav {
+          font-size: 0.75em;
+        }
+      }
+    }
+
+  }
+  ul.clearfix {
+    &:first-of-type {
+      li {
+        width: calc(50% - 30px);
+      }
+    }
+  }
+}
+@media screen and (max-width: $md-width - (1)){
+  .arr-left{
+    left:15px;
+  }
+  .arr-right{
+    right:15px;
+  }
+  .get-started {
+    article {
+      margin-top: 100px;
+      a.button {
+        margin: 63px auto 100px;
+      }
+    }
+  }
+  .title-block h2 {
+    font-size: 1.875em;
+  }
+  .work {
+    .button {
+      margin: 41px auto 60px;
+    }
+  }
+  .advantages {
+    margin-bottom: 60px;
+  }
+  .slider {
+    li{
+      margin: 80px auto 0;
+    }
+  }
+}
+@media screen and (min-width: $sm-width){
+  .get-started {
+    article {
+      h2+p {
+        padding:  0 50px;
+      }
+    }
+  }
+  .work-presentation{
+    figure{
+      width: calc(50% - 30px);
+    }
+  }
+  .author{
+    float: left;
+  }
+  footer {
+    nav{
+      float: right;
+      li{
+        display: inline-block;
+        padding: 31px 15px;
+      }
+    }
+  }
+}
+@media screen and (min-width: $md-width){
+  .get-started {
+    article {
+      margin-top: 300px;
+      h2 {
+        font-size: 4.875em;
+      }
+      h2+p{
+        font-size: 1.5em;
+        padding:  0 113px;
+      }
+      a.button{
+        margin: 63px auto 302px;
+      }
+    }
+  }
+  .arr-left{
+    left:30px;
+  }
+  .arr-right{
+    right:30px;
+  }
+  .title-block {
+    h2{
+      font-size: 2.75em;
+    }
+    p{
+      padding: 0 180px;
+    }
+  }
+  .advantages {
+    margin-bottom: 129px;
+    .about {
+      padding: 0 55px 0 20px;
+    }
+  }
+  .work {
+    .button{
+      margin: 41px auto 130px;
+    }
+  }
+    .work-slider {
+      ul.clearfix {
+        &:first-of-type {
+          li {
+            width: calc(25% - 30px);
+          }
+        }
+      }
+    }
+}
